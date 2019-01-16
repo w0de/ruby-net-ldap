@@ -1150,6 +1150,7 @@ class Net::LDAP
   #
   # _Documentation_ _stub_
   def rename(args)
+    p 'Hello from my ruby-net-ldap fork'
     instrument "rename.net_ldap", args do |payload|
       @result = use_connection(args) do |conn|
         conn.rename(args)
